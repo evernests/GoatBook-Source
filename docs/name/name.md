@@ -47,7 +47,7 @@ mdn是啥比，贪官污吏，叛徒，特务，反党分子，野心家，黑�
 群视奸  
 
 ## 马步芳(暂无搜索结果，换个词试试吧) {#creeper}
-![](https://img.wsmdn.dpdns.org/img/马步方的帅照.jpg){ width=45% }
+![](https://img.wsmdn.dpdns.org/img/马步芳的帅照.png){ width=45% }  
 原名:**杨翔**  
 江苏省生物，使用电信   
 经常改名  
