@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     if: >
       (github.event.action == 'labeled' && github.event.label.name == 'approved') ||
-      (github.event.action == 'unlabeled' && github.event.label.name == 'waiting-review')
+      (github.event.action == 'unlabeled' && github.event.label.name == 'ready to review')
     permissions:
       contents: write
       pull-requests: write
@@ -27,7 +27,7 @@ jobs:
         uses: "pascalgn/automerge-action@v0.16.4"
         env:
           GITHUB_TOKEN: "${{ secrets.BOT_TOKEN }}"
-          MERGE_LABELS: "approved,auto merge,!waiting-review"
+          MERGE_LABELS: "approved,auto merge,!ready to review"
           MERGE_METHOD: "squash"
           MERGE_COMMIT_MESSAGE: "automatic"
           MERGE_FORKS: "true"
