@@ -49,5 +49,5 @@ jobs:
                 owner,
                 repo,
                 issue_number,
-                labels: ['ready to review','waiting-review','AI review first','auto merge']
+                labels: ['ready to review','AI review first','auto merge']
               });
