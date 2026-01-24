@@ -170,22 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <source src="https://www.wsmdn.top/more/test.mp4" type="video/mp4">
 </video>)
 <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-<script src="/js/dist/autoload.js"></script>
- <script>
-// 页面加载完成后开始定期执行
-window.addEventListener('load', () => {
-  console.log("Live2D waifu script loaded.");
-  
-  // 初始执行一次
-  updateWaifuStyle();
 
-  // 每隔 1 秒检查一次 modelId 是否发生变化（例如其他脚本修改了 localStorage）
-  setInterval(() => {
-    console.log("running");
-    updateWaifuStyle();
-  }, 1000);
-});
-  </script>
 <div id="giscus"></div>
 <script src="https://giscus.app/client.js"
         data-repo="nomdn/GoatBook-Source"
@@ -202,3 +187,19 @@ window.addEventListener('load', () => {
         crossorigin="anonymous"
         async>
 </script>
+<script src="/js/dist/autoload.js"></script>
+ <script>
+// 页面加载完成后开始定期执行
+window.addEventListener('load', () => {
+  console.log("Live2D waifu script loaded.");
+  
+  // 初始执行一次
+  updateWaifuStyle();
+
+  // 每隔 1 秒检查一次 modelId 是否发生变化（例如其他脚本修改了 localStorage）
+  setInterval(() => {
+    console.log("running");
+    updateWaifuStyle();
+  }, 1000);
+});
+  </script>
